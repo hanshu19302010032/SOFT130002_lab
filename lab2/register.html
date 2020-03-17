@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <script type="text/javascript" src="identifyingCode.js"></script>
+    <link rel="stylesheet" href="regidter.css">
+</head>
+<body>
+<div id="wrapper">
+    <a href="home.html"><h1>Home</h1></a>
+    <h1>Sign Up</h1>
+    <form method="get">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>Username: <input type="text" name="username" id="username" pattern="^[A-Za-z0-9_]$" required="required">
+            </label><br><br>
+            <label>Password: <input type="password" name="password" id="password" pattern="^[A-Za-z0-9].{7,}$"
+                                    required="required">
+            </label><br><br>
+            <label>Password Confirm: <input type="password" name="confirm" id="confirm"
+                                            pattern="^[A-Za-z0-9].{7,}$" required="required"></label><br><br>
+            <label>Address:<select size="1" name="address" id="address" required="required">
+                <option>Zhejiang</option>
+                <option>Jiangsu</option>
+                <option>Fujian</option>
+                <option>Guangdong</option>
+                <option selected="selected">Shanghai</option>
+            </select></label><br><br>
+            <label>Telephone: <input type="text" name="telephone" id="telephone" pattern="^1\d{10}$"
+                                     required="required"></label><br><br>
+            <label>Appliance:
+                <input type="checkbox" name="Android" id="Android" value="yes">Android
+                <input type="checkbox" name="iPhone" id="iPhone" value="yes">iPhone
+                <input type="checkbox" name="Windows" id="Windows" value="yes">Windows
+                <input type="checkbox" name="Mac" id="Mac" value="yes">Mac
+            </label><br><br>
+            <label>Proviso: <br>
+                <a href="a.txt"> click here to read</a><br>
+                <input type="radio" value="agree" name="agree" id="agree" required="required">agree
+                <input type="radio" value="disagree" name="agree" id="disagree">disagree
+            </label><br><br>
+            <label>identifying code:
+                <input type="text" id="input" required="required">
+                <input type="button" id="code" value="click to get code" onclick="createCode()"/>
+                <input type="button" value="validate" onclick="validate()"/>
+            </label>
+        </fieldset>
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+        <input type="submit" value="submit" /> <input type="reset" value="reset">
+    </form>
+</div>
+</body>
+</html>
