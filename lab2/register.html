@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>register</title>
     <script type="text/javascript" src="identifyingCode.js"></script>
-    <link rel="stylesheet" href="regidter.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
 <div id="wrapper">
@@ -13,9 +13,9 @@
     <form method="get">
         <fieldset>
             <legend>Customer Information</legend>
-            <label>Username: <input type="text" name="username" id="username" pattern="^[A-Za-z0-9_]$" required="required">
+            <label>Username: <input type="text" name="username" id="username" pattern="^[A-Za-z0-9_]+$" required="required">
             </label><br><br>
-            <label>Password: <input type="password" name="password" id="password" pattern="^[A-Za-z0-9].{7,}$"
+            <label>Password: <input type="password" name="password" id="password" pattern="^[A-Za-z0-9].{8,}$"
                                     required="required">
             </label><br><br>
             <label>Password Confirm: <input type="password" name="confirm" id="confirm"
