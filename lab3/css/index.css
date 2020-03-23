@@ -1,0 +1,131 @@
+header, nav, main, footer {
+    display: block;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #000033;
+    min-width: 600px;
+    max-width: 900px;
+    box-shadow: 5px 5px 5px #1e1e1e;
+}
+
+header {
+    background-color: #000033; /*make the color same as header.jpg*/
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    border-bottom: 2px solid #000000;
+    height: 100px;
+}
+
+header h1 {
+    line-height: 200%; /*the height of one text line*/
+    padding-left: 20px;
+    height: 72px;
+    margin-bottom: 0;
+    font-size: 2.8em;
+    font-weight: bolder;
+}
+
+#floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+nav {
+    float: left;
+    font-weight: bold;
+    width: 220px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    position: fixed;
+    top: 100px
+}
+
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.0em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: 1px dashed #ffffff;
+}
+
+
+nav a:hover {
+    color: #FFFFFF;
+    font-style: italic;
+    border-bottom: 2px solid #ffffff;
+    font-size: 1.1em;
+}
+
+
+main {
+    margin: 0 0 0 220px;
+    padding: 30px 10px 30px 10px;
+    background-color: #ffffff;
+}
+
+section {
+    clear: both;
+}
+
+section li {
+    font-size: larger
+}
+
+section p {
+    font-size: medium;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.read {
+    font-family: fantasy;
+    color: gray
+}
+
+.agree {
+    color: gray
+}
+
+
+footer {
+    color: whitesmoke;
+    background-color: #000000;
+    font-size: .70em;
+    font-style: italic;
+    padding: 10px;
+    clear: both;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+}
+
+footer div {
+    position: fixed;
+    right: 20px;
+    bottom: 1px;
+}
+
+#mark {
+    font-size: 1.5em;
+}
