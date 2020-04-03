@@ -15,7 +15,6 @@
 </head>
 <body>
 <div class="container-fluid" id="wrapper">
-<!--<div id="wrapper">-->
     <header><h1>Image Gallery</h1></header>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
@@ -43,13 +42,7 @@
 
     <main>
         <div id="slidershow" class="carousel slide" data-ride="carousel" data-interval=2000 data-pause="hover"
-             data-wrap="true" style="margin-top: 5px; width: 80%;height: 80%; margin-left:auto; margin-right:auto;">
-<!--            data-interval设置自动变化的时间（毫秒）-->
-<!--            data-pause = "hover"鼠标放上去会停止轮播默认的是hover-->
-<!--            data-wrap="true"设置是不是循环轮播 布尔类型的，true或者false-->
-<!--            data-slide-to="1" 设置下面的圆点是不是可以直接点击切换-->
-<!--            data-slide="next"设置该区域被点击是执行向前还是向后的操作-->
-            <!-- 设置图片轮播的顺序 -->
+             data-wrap="true">
             <ol class="carousel-indicators">
                 <li class="active" data-target="#slidershow" data-slide-to="0"></li>
                 <li data-target="#slidershow" data-slide-to="1"></li>
@@ -58,13 +51,13 @@
             <!--设置轮播的图片-->
             <div class="carousel-inner">
                 <div class="item active">
-                    <a href="#"><img src="images/home7.jpg" width="640" height="240" alt="cat1"></a>
+                    <a href="#"><img src="images/home7.jpg" width="640" height="240" alt="1"></a>
                 </div>
                 <div class="item">
-                    <a href="#"><img src="images/home8.jpg" width="640" height="640" alt="cat2"></a>
+                    <a href="#"><img src="images/home8.jpg" width="640" height="240" alt="2"></a>
                 </div>
                 <div class="item">
-                    <a href="#"><img src="images/home9.jpg" width="640" height="640" alt="cat3"></a>
+                    <a href="#"><img src="images/home9.jpg" width="640" height="240" alt="3"></a>
                 </div>
             </div>
             <a class="left carousel-control" href="#slidershow" role="button" data-slide="prev">
