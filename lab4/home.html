@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="lab4.css" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div class="container-fluid" id="wrapper">
+<!--<div id="wrapper">-->
+    <header><h1>Image Gallery</h1></header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            My Account
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Upload</a></li>
+                            <li><a href="#">photo</a></li>
+                            <li><a href="#">favorite</a></li>
+                            <li><a href="#">index</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="slidershow" class="carousel slide" data-ride="carousel" data-interval=2000 data-pause="hover"
+             data-wrap="true" style="margin-top: 5px; width: 80%;height: 80%; margin-left:auto; margin-right:auto;">
+<!--            data-interval设置自动变化的时间（毫秒）-->
+<!--            data-pause = "hover"鼠标放上去会停止轮播默认的是hover-->
+<!--            data-wrap="true"设置是不是循环轮播 布尔类型的，true或者false-->
+<!--            data-slide-to="1" 设置下面的圆点是不是可以直接点击切换-->
+<!--            data-slide="next"设置该区域被点击是执行向前还是向后的操作-->
+            <!-- 设置图片轮播的顺序 -->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slidershow" data-slide-to="0"></li>
+                <li data-target="#slidershow" data-slide-to="1"></li>
+                <li data-target="#slidershow" data-slide-to="2"></li>
+            </ol>
+            <!--设置轮播的图片-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#"><img src="images/home7.jpg" width="640" height="240" alt="cat1"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/home8.jpg" width="640" height="640" alt="cat2"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/home9.jpg" width="640" height="640" alt="cat3"></a>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#slidershow" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </main>
+
+
+</div>
+
+</body>
+</html>
