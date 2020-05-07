@@ -1,5 +1,6 @@
 #lab6设计文档  
- ##MAP、Set、Array
+
+![](2.png) ##MAP、Set、Array
 
  -  Map：  
  是一组键值对的结构，具有极快的查找速度。通过传入数组的数组来建立。  
