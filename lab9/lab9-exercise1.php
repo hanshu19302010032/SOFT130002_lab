@@ -9,8 +9,14 @@
 <h1>PHP section (inside &lt;?php ... ?&gt; tags)</h1>
 <?php
 //this is a php comment IN tags (will not appear)
-$remaining = 365 - date("z") + date("L");
-echo "There are ". $remaining . " days left in the year";
+
+
+$date = date("l, F dS, Y H:i:s");
+echo "This page was generated: " . $date . "<hr/>";
+
+
+//$remaining = 365 - date("z") + date("L");
+//echo "There are ". $remaining . " days left in the year";
 
 ?>
 </body>
